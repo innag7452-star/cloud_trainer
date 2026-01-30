@@ -1,0 +1,41 @@
+{
+    "local": "English",
+    "lang": {
+        "TRAINER_NAME": "Cloud Services Learning Platform",
+        "MAX_SCORE": "Maximum Score",
+        "NEXT_STEP": "Next Step",
+        "PREV_STEP": "Previous Step",
+        "CHOOSE_LANG": "Choose Language",
+        "CHECK": "Check",
+        "ALERT_WELL_DONE": "Well Done!",
+        "ALERT_FAIL": "Error!",
+        "ALERT_STEP_SUCCESS": " Step completed successfully! Move to the next one.",
+        "ALERT_STEP_FAIL": " Try again or move to the next step.",
+        "END_TRAINER": "Finish",
+        "END_ARE_YOU_SURE": "Are you sure you want to finish the training?",
+        "END_TRAINER_CLOSE": "Continue",
+        "END_TRAINER_SEND": "Finish",
+        
+        "STEP1_NAME": "Step 1: Crossword",
+        "STEP2_NAME": "Step 2: Service Matching",
+        "STEP3_NAME": "Step 3: Providers",
+        "STEP4_NAME": "Results",
+        
+        "STEP1_TITLE": "Crossword: Cloud Computing Basics",
+        "STEP1_DESCRIPTION": "Solve the crossword about cloud services fundamentals",
+        
+        "STEP2_TITLE": "Matching AWS Services to Tasks",
+        "STEP2_DESCRIPTION": "Drag appropriate AWS services to use case scenarios",
+        
+        "STEP3_TITLE": "Cloud Provider Services",
+        "STEP3_DESCRIPTION": "Indicate which provider owns the listed services",
+        
+        "RESULTS_TITLE": "Congratulations! You've completed the training",
+        "RESULTS_START_TIME": "Start time",
+        "RESULTS_END_TIME": "End time",
+        "RESULTS_TIME_DIFF": "Time spent",
+        "RESULTS_TIME_SEC": "seconds",
+        "RESULTS_YOUR_SCORE": "Your score",
+        "RESULTS_CONGRATULATIONS": "Thank you for completing the cloud technologies course!"
+    }
+}

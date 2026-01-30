@@ -1,0 +1,66 @@
+<div class="step-content">
+    <h2>Сервіси хмарних провайдерів</h2>
+    <p class="lead text-center">Вкажіть, якому провайдеру належать наведені сервіси</p>
+
+    <div class="matching-container">
+        <p class="text-center">Оберіть правильного хмарного провайдера для кожного сервісу</p>
+
+        <div class="matching-grid">
+            <div class="matching-column">
+                <h3>Хмарні провайдери</h3>
+                
+                <div class="matching-item">
+                    <strong>Amazon Web Services (AWS)</strong>
+                    <p>Найбільший провайдер хмарних послуг у світі з найширшим набором сервісів. Лідер ринку з 2006 року. Використовується компаніями Netflix, Airbnb, NASA.</p>
+                </div>
+                
+                <div class="matching-item">
+                    <strong>Microsoft Azure</strong>
+                    <p>Хмарна платформа Microsoft з відмінною інтеграцією з продуктами компанії (Windows Server, Active Directory, Office 365). Популярна серед корпоративних клієнтів.</p>
+                </div>
+                
+                <div class="matching-item">
+                    <strong>Google Cloud Platform (GCP)</strong>
+                    <p>Хмарна платформа Google зі спеціалізацією на Big Data, машинному навчанні та аналітиці. Використовує ту ж інфраструктуру, що і продукти Google (Gmail, YouTube).</p>
+                </div>
+            </div>
+
+            <div class="matching-column">
+                <h3>Сервіси</h3>
+                
+                <div class="form-group">
+                    <label><strong>Питання 1:</strong> AWS Lambda - перший масовий сервіс безсерверних обчислень для виконання коду без управління серверами. Якому провайдеру він належить?</label>
+                    <div class="radios">
+                        <label><input type="radio" name="service1" value="aws"> Amazon Web Services (AWS)</label>
+                        <label><input type="radio" name="service1" value="azure"> Microsoft Azure</label>
+                        <label><input type="radio" name="service1" value="gcp"> Google Cloud Platform (GCP)</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><strong>Питання 2:</strong> BigQuery - сервіс для швидкого аналізу великих обсягів даних (петабайти) за допомогою SQL запитів. Який провайдер розробив цей сервіс?</label>
+                    <div class="radios">
+                        <label><input type="radio" name="service2" value="aws"> Amazon Web Services (AWS)</label>
+                        <label><input type="radio" name="service2" value="azure"> Microsoft Azure</label>
+                        <label><input type="radio" name="service2" value="gcp"> Google Cloud Platform (GCP)</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><strong>Питання 3:</strong> Azure Functions - платформа для виконання event-driven коду без серверів з глибокою інтеграцією в екосистему Microsoft. Хто є автором цього сервісу?</label>
+                    <div class="radios">
+                        <label><input type="radio" name="service3" value="aws"> Amazon Web Services (AWS)</label>
+                        <label><input type="radio" name="service3" value="azure"> Microsoft Azure</label>
+                        <label><input type="radio" name="service3" value="gcp"> Google Cloud Platform (GCP)</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="alert alert-info" style="margin-top: 20px;">
+            <strong>Підказка:</strong> Зверніть увагу на назви сервісів - вони часто містять назву або абревіатуру провайдера
+        </div>
+    </div>
+
+    <button class="check-button" onclick="validateStep3()">Перевірити</button>
+</div>

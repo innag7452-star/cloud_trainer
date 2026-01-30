@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Services Training Platform</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="trainer-header">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="trainerName">Навчальна платформа: Хмарні Сервіси</h1>
+                    <div class="trainer-info">
+                        <span id="maxScoreLabel">Максимум балів: <span id="trainerScore">100</span></span>
+                        <span class="lang-selector">
+                            Оберіть мову: 
+                            <select id="langSelector">
+                                <option value="uk" selected>Українська</option>
+                                <option value="en">English</option>
+                                <option value="ru">Русский</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="trainer-progress-bar">
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" style="width: 0%">
+                    <span class="progress-text">0%</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="breadcrumb-nav">
+            <ol class="breadcrumb bc-steps">
+            </ol>
+        </nav>
+
+        <section class="stepspace">
+            <div class="text-center">
+                <div class="spinner"></div>
+                <p>Завантаження...</p>
+            </div>
+        </section>
+
+        <div class="validation-alert-success alert alert-success" style="display:none;">
+            <strong>Чудово!</strong> Крок пройдено успішно! Переходьте до наступного.
+        </div>
+
+        <div class="validation-alert-danger alert alert-danger" style="display:none;">
+            <strong>Помилка!</strong> Спробуйте ще раз або переходьте до наступного кроку.
+        </div>
+
+        <footer class="trainer-footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <button id="prevController" class="btn btn-default" disabled>
+                        <span class="glyphicon glyphicon-chevron-left"></span> Попередній крок
+                    </button>
+                    <button id="nextController" class="btn btn-primary">
+                        Наступний крок <span class="glyphicon glyphicon-chevron-right"></span>
+                    </button>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button id="endTrainer" class="btn btn-danger" data-toggle="modal" data-target="#endModal">
+                        Завершити
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="endModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Завершити навчання</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Ви впевнені, що хочете завершити виконання тренажера?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Продовжити поточний сеанс
+                    </button>
+                    <button type="button" class="btn btn-danger" onclick="endTrainerNow()">
+                        Завершити поточний сеанс
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/trainer-core.js"></script>
+</body>
+</html>

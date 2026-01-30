@@ -1,0 +1,42 @@
+<div class="step-content">
+    <h2>Підбір AWS сервісів під завдання</h2>
+    <p class="lead text-center">Перетягніть відповідні AWS сервіси до сценаріїв використання</p>
+
+    <div class="cloud-services-container">
+        <p class="service-title">Оберіть правильний AWS сервіс для кожного сценарію</p>
+
+        <div class="scenarios">
+            <div class="scenario-card" name="scenario1">
+                <h4>Сценарій 1: Зберігання файлів</h4>
+                <p>Компанії потрібно зберігати терабайти зображень та відео з можливістю швидкого доступу через HTTP. Потрібен масштабований об'єктний сервіс зберігання даних.</p>
+            </div>
+            
+            <div class="scenario-card" name="scenario2">
+                <h4>Сценарій 2: Веб-додаток</h4>
+                <p>Потрібно запустити веб-сервери для розміщення корпоративного сайту з повним контролем над операційною системою та можливістю встановлення будь-якого програмного забезпечення.</p>
+            </div>
+            
+            <div class="scenario-card" name="scenario3">
+                <h4>Сценарій 3: Реляційна база даних</h4>
+                <p>Необхідна керована SQL база даних (MySQL або PostgreSQL) з автоматичним резервним копіюванням, масштабуванням та відновленням після збоїв.</p>
+            </div>
+            
+            <div class="scenario-card" name="scenario4">
+                <h4>Сценарій 4: Обробка подій</h4>
+                <p>Виконання коду у відповідь на події (завантаження файлу, HTTP запит, зміни в базі даних) без необхідності управління серверами та оплати за простій.</p>
+            </div>
+        </div>
+
+        <div class="draggables">
+            <h4>Доступні AWS сервіси (перетягніть до відповідних сценаріїв):</h4>
+            <div class="draggable" data-value="s3">Amazon S3</div>
+            <div class="draggable" data-value="ec2">Amazon EC2</div>
+            <div class="draggable" data-value="rds">Amazon RDS</div>
+            <div class="draggable" data-value="lambda">AWS Lambda</div>
+            <div class="draggable" data-value="cloudfront">CloudFront</div>
+            <div class="draggable" data-value="dynamodb">DynamoDB</div>
+        </div>
+    </div>
+
+    <button class="check-button" onclick="validateStep2()">Перевірити</button>
+</div>

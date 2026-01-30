@@ -1,0 +1,38 @@
+{
+    "production": false,
+    "trainer_author": "Cloud Training Team",
+    "course_author": "SumDU Distance Learning",
+    "trainer_score": 100,
+    "default_lang": "uk",
+    "languages": {
+        "uk": "Українська",
+        "en": "English",
+        "ru": "Русский"
+    },
+    "steps": [
+        {
+            "name": "step1",
+            "title": "Крок 1: Кросворд",
+            "score": 30,
+            "hasScript": false
+        },
+        {
+            "name": "step2",
+            "title": "Крок 2: Підбір сервісів",
+            "score": 35,
+            "hasScript": false
+        },
+        {
+            "name": "step3",
+            "title": "Крок 3: Провайдери",
+            "score": 35,
+            "hasScript": false
+        },
+        {
+            "name": "results",
+            "title": "Результати",
+            "score": 0,
+            "hasScript": false
+        }
+    ]
+}
